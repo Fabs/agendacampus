@@ -1,5 +1,7 @@
 class EventosController < ApplicationController
+  
   active_scaffold :evento
+  
   # GET /eventos
   # GET /eventos.xml
   def index

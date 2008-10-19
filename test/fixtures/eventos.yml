@@ -4,8 +4,8 @@ one:
   titulo: MyString
   palestrante: MyString
   data: 2008-10-19
-  inicio: 
-  fim: 
+  inicio: 2008-10-19 21:58:09
+  fim: 2008-10-19 21:58:09
   cor: MyString
   area: MyString
 
@@ -13,7 +13,7 @@ two:
   titulo: MyString
   palestrante: MyString
   data: 2008-10-19
-  inicio: 
-  fim: 
+  inicio: 2008-10-19 21:58:09
+  fim: 2008-10-19 21:58:09
   cor: MyString
   area: MyString

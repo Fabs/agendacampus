@@ -4,8 +4,8 @@ class CreateEventos < ActiveRecord::Migration
       t.string :titulo
       t.string :palestrante
       t.date :data
-      t.hour :inicio
-      t.hour :fim
+      t.time :inicio
+      t.time :fim
       t.string :cor
       t.string :area
 
