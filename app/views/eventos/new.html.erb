@@ -1,0 +1,46 @@
+<h1>New evento</h1>
+
+<%= error_messages_for :evento %>
+
+<% form_for(@evento) do |f| %>
+  <p>
+    <b>Titulo</b><br />
+    <%= f.text_field :titulo %>
+  </p>
+
+  <p>
+    <b>Palestrante</b><br />
+    <%= f.text_field :palestrante %>
+  </p>
+
+  <p>
+    <b>Data</b><br />
+    <%= f.date_select :data %>
+  </p>
+
+  <p>
+    <b>Inicio</b><br />
+    <%= f.text_field :inicio %>
+  </p>
+
+  <p>
+    <b>Fim</b><br />
+    <%= f.text_field :fim %>
+  </p>
+
+  <p>
+    <b>Cor</b><br />
+    <%= f.text_field :cor %>
+  </p>
+
+  <p>
+    <b>Area</b><br />
+    <%= f.text_field :area %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', eventos_path %>

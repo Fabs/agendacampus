@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  titulo: MyString
+  palestrante: MyString
+  data: 2008-10-19
+  inicio: 
+  fim: 
+  cor: MyString
+  area: MyString
+
+two:
+  titulo: MyString
+  palestrante: MyString
+  data: 2008-10-19
+  inicio: 
+  fim: 
+  cor: MyString
+  area: MyString

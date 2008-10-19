@@ -1,0 +1,19 @@
+class CreateEventos < ActiveRecord::Migration
+  def self.up
+    create_table :eventos do |t|
+      t.string :titulo
+      t.string :palestrante
+      t.date :data
+      t.hour :inicio
+      t.hour :fim
+      t.string :cor
+      t.string :area
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :eventos
+  end
+end

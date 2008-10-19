@@ -1,0 +1,38 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @evento.titulo %>
+</p>
+
+<p>
+  <b>Palestrante:</b>
+  <%=h @evento.palestrante %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%=h @evento.data %>
+</p>
+
+<p>
+  <b>Inicio:</b>
+  <%=h @evento.inicio %>
+</p>
+
+<p>
+  <b>Fim:</b>
+  <%=h @evento.fim %>
+</p>
+
+<p>
+  <b>Cor:</b>
+  <%=h @evento.cor %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%=h @evento.area %>
+</p>
+
+
+<%= link_to 'Edit', edit_evento_path(@evento) %> |
+<%= link_to 'Back', eventos_path %>
