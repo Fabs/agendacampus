@@ -1,5 +1,4 @@
-module EventosHelper
-  
+module EventosHelper  
   def tipo_select
     ['Oficina','Palestra','Curso','Demo/Apresentação','Desafio','Simulação de Voo','Bate Papos', 'Premiação', 'Espaço Telefônica'].sort
   end
@@ -16,9 +15,9 @@ module EventosHelper
     '<th>Area</th><th>' + area_select.join('</th><th></th> <th>')
   end
   
-  def event_for(grade,horario,dia)
-    if !grade[horario][dia].nil?
-      return grade[horario][dia]
+  def event_for(grade,dia,horario,area)
+    if !grade[dia][horario][area].nil?
+      return grade[dia][horario][area]
     end
     nil
   end

@@ -7,14 +7,15 @@ class EventosController < ApplicationController
     @eventos = Evento.find(:all)
     @grade = {}
     @eventos.each do |evento|
-      if @grade[evento.as_key].nil?
-        @grade[evento.as_key] = {}
+      if @grade[evento.data].nil?
+        @grade[evento.data] = {}
       end
-      @grade[evento.as_key][evento.area] = evento
+        if @grade[evento.data][evento.as_key].nil?
+          @grade[evento.data][evento.as_key] = {}
+        end
+        @grade[evento.data][evento.as_key][evento.area] = evento
     end
     @fora = []
-    
-    @horarios = @grade.keys.sort
 
     respond_to do |format|
       format.html # index.html.erb
