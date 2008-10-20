@@ -5,7 +5,7 @@ module EventosHelper
   end
   
   def area_select
-    ['SoftwareLivre','Modding','Campus Blog','Games','Robótica','Simulação','Design','Fotografia','Música','Vídeo','Desenvolvimento'].sort
+    ['Software Livre','Modding','Campus Blog','Games','Robótica','Simulação','Design','Fotografia','Música','Vídeo','Desenvolvimento','Astronomia'].sort
   end
   
   def data_select

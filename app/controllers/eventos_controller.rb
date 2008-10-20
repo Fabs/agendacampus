@@ -14,7 +14,7 @@ class EventosController < ApplicationController
     end
     @fora = []
     
-    @horarios = @grade.keys
+    @horarios = @grade.keys.sort
 
     respond_to do |format|
       format.html # index.html.erb

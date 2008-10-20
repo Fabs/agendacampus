@@ -1,19 +1,122 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+oficina_grande:
+    titulo: Eu tenho um titulo grande para caramba e vc vai se ferrar por causa disso
+    palestrante: Eu sou um palestrante muito foda
+    data: Segunda
+    inicio: 2008-10-19 01:10
+    fim: 2008-10-19 15:30
+    tipo: Oficina
+    area: Robótica
+oficina_0:
+    titulo: Oficina
+    palestrante: 0
+    data: Segunda
+    inicio: 2008-10-19 10:10
+    fim: 2008-10-19 15:30
+    tipo: Oficina
+    area: Astronomia
+palestra:
+    titulo: Palestra
+    palestrante: 1
+    data: Terça
+    inicio: 2008-10-19 22:30
+    fim: 2008-10-19 23:00
+    tipo: Oficina
+    area: Astronomia
+curso:
+    titulo: Curso
+    palestrante: 2
+    tipo: Curso
+    area: Modding
+    data: Segunda
+    inicio: 2008-10-19 8:10
+    fim: 2008-10-19 10:30
+simulacao:
+    titulo: Simulação de Voo
+    palestrante: 3
+    tipo: Simulação de Voo
+    area: Campus Blog
+    data: Segunda
+    inicio: 2008-10-19 8:10
+    fim: 2008-10-19 10:30
+demo:
+    titulo: Demo/Apresentação
+    palestrante: 4
+    tipo: Demo/Apresentação
+    area: Software Livre
+    data: Segunda
+    inicio: 2008-10-19 8:10
+    fim: 2008-10-19 10:30
+desafio:
+    titulo: Desafio
+    palestrante: 5
+    tipo: Desafio
+    area: Games
+    data: Segunda
+    inicio: 2008-10-19 8:10
+    fim: 2008-10-19 10:30
+batepapo:
+    titulo: Bate Papos
+    palestrante: 6
+    tipo: Bate Papos
+    area: Robótica
+    data: Segunda
+    inicio: 2008-10-19 8:10
+    fim: 2008-10-19 10:30
+premiacao:
+    titulo: Premiação
+    palestrante: 7
+    tipo: Premiação
+    area: Simulação
+    data: Segunda
+    inicio: 2008-10-19 8:10
+    fim: 2008-10-19 10:30
+telefonica:
+    titulo: Espaço Telefônica
+    palestrante: 8
+    tipo: Espaço Telefônica
+    area: Design
+    data: Segunda
+    inicio: 2008-10-19 8:10
+    fim: 2008-10-19 10:30
 
-one:
-  titulo: MyString
-  palestrante: MyString
-  data: 2008-10-19
-  inicio: 2008-10-19 21:58:09
-  fim: 2008-10-19 21:58:09
-  cor: MyString
-  area: MyString
-
-two:
-  titulo: MyString
-  palestrante: MyString
-  data: 2008-10-19
-  inicio: 2008-10-19 21:58:09
-  fim: 2008-10-19 21:58:09
-  cor: MyString
-  area: MyString
+telefonicafoto:
+    titulo: Fotografia
+    palestrante: 9
+    tipo: Espaço Telefônica
+    area: Fotografia
+    data: Quarta
+    inicio: 2008-10-19 10:15
+    fim: 2008-10-19 22:30
+demo-musica:
+    titulo: Demo/Apresentação
+    palestrante: 10
+    tipo: Demo/Apresentação
+    area: Música
+    data: Domingo
+    inicio: 2008-10-19 12:00
+    fim: 2008-10-19 15:30
+demo-musica2:
+    titulo: Demo/Apresentação2
+    palestrante: 11
+    tipo: Demo/Apresentação
+    area: Música
+    data: Sexta
+    inicio: 2008-10-19 13:10
+    fim: 2008-10-19 15:30
+batepapo-video:
+    titulo: Bate Papos
+    palestrante: 12
+    tipo: Bate Papos
+    area: Vídeo
+    data: Quinta
+    inicio: 2008-10-19 11:10
+    fim: 2008-10-19 12:30
+oficina:
+    titulo: Oficina
+    palestrante: 13
+    data: Segunda
+    inicio: 2008-10-19 21:10
+    fim: 2008-10-19 21:30
+    tipo: Oficina
+    area: Desenvolvimento

@@ -18,7 +18,13 @@ class Evento < ActiveRecord::Base
   end
   
   def as_key
-    key = self.inicio.hour.to_s + ":"
+    key = ""
+    if  self.inicio.hour < 10
+      key += "0"+ self.inicio.hour.to_s
+    else
+      key += self.inicio.hour.to_s
+    end
+    key += ":"
     if self.inicio.min < 10
       key += "0"+ self.inicio.min.to_s
     else

@@ -13,8 +13,11 @@
          <% for area in area_select %>
             <% @e = event_for(@grade,horario,area)%>
             <% if !@e.nil? %>
-               <th style="background:<%= @e.cor%>"><%= link_to @e.titulo, edit_evento_path(@e)%> </th>
-               <th style="background:<%= @e.cor%>"> <%= link_to 'X', @e, :confirm => 'Tem Certeza que deseja remover?', :method => :delete %>     </th>
+               <th style="background:<%= @e.cor%>"><%= link_to "#{@e.titulo}(#{@e.palestrante})", edit_evento_path(@e)%> </th>
+               <th style="background:<%= @e.cor%>"> <%= link_to image_tag("remove.jpg",:size=>"15x15"), @e, :confirm => 'Tem Certeza que deseja remover?', :method => :delete %>     </th>
+            <% else %>
+               <th> </th>
+               <th> </th>
             <% end %>
          <% end %>
       </tr>
