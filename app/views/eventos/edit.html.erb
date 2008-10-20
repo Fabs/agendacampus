@@ -15,27 +15,27 @@
 
   <p>
     <b>Data</b><br />
-    <%= f.date_select :data %>
+    <%= f.select :data , data_select %>
   </p>
 
   <p>
     <b>Inicio</b><br />
-    <%= f.datetime_select :inicio %>
+    <%= f.time_select :inicio %>
   </p>
 
   <p>
     <b>Fim</b><br />
-    <%= f.datetime_select :fim %>
+    <%= f.time_select :fim %>
   </p>
 
   <p>
     <b>Tipo</b><br />
-    <%= f.text_field :tipo %>
+    <%= f.select :tipo, tipo_select %>
   </p>
 
   <p>
     <b>Area</b><br />
-    <%= f.text_field :area %>
+    <%= f.select :area, area_select %>
   </p>
 
   <p>
@@ -43,5 +43,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @evento %> |
 <%= link_to 'Back', eventos_path %>

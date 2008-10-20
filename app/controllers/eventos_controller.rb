@@ -1,11 +1,20 @@
 class EventosController < ApplicationController
-  
-  active_scaffold :evento
+  active_scaffold :eventos
   
   # GET /eventos
   # GET /eventos.xml
   def index
     @eventos = Evento.find(:all)
+    @grade = {}
+    @eventos.each do |evento|
+      if @grade[evento.as_key].nil?
+        @grade[evento.as_key] = {}
+      end
+      @grade[evento.as_key][evento.area] = evento
+    end
+    @fora = []
+    
+    @horarios = @grade.keys
 
     respond_to do |format|
       format.html # index.html.erb
@@ -48,7 +57,7 @@ class EventosController < ApplicationController
     respond_to do |format|
       if @evento.save
         flash[:notice] = 'Evento was successfully created.'
-        format.html { redirect_to(@evento) }
+        format.html { redirect_to(eventos_url) }
         format.xml  { render :xml => @evento, :status => :created, :location => @evento }
       else
         format.html { render :action => "new" }
@@ -65,7 +74,7 @@ class EventosController < ApplicationController
     respond_to do |format|
       if @evento.update_attributes(params[:evento])
         flash[:notice] = 'Evento was successfully updated.'
-        format.html { redirect_to(@evento) }
+        format.html { redirect_to(eventos_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

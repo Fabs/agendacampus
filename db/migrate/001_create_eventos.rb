@@ -3,7 +3,7 @@ class CreateEventos < ActiveRecord::Migration
     create_table :eventos do |t|
       t.string :titulo
       t.string :palestrante
-      t.date :data
+      t.string :data
       t.time :inicio
       t.time :fim
       t.string :tipo

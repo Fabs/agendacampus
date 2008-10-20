@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 1) do
   create_table "eventos", :force => true do |t|
     t.string   "titulo"
     t.string   "palestrante"
-    t.date     "data"
+    t.string   "data"
     t.datetime "inicio"
     t.datetime "fim"
     t.string   "tipo"
