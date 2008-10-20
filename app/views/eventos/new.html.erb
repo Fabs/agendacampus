@@ -20,22 +20,22 @@
 
   <p>
     <b>Inicio</b><br />
-    <%= f.datetime_select :inicio %>
+    <%= f.time_select :inicio %>
   </p>
 
   <p>
     <b>Fim</b><br />
-    <%= f.datetime_select :fim %>
+    <%= f.time_select :fim %>
   </p>
 
   <p>
-    <b>Cor</b><br />
-    <%= f.text_field :cor %>
+    <b>Tipo</b><br />
+    <%= f.select :tipo, tipo_select %>
   </p>
 
   <p>
     <b>Area</b><br />
-    <%= f.text_field :area %>
+    <%= f.select :area, area_select %>
   </p>
 
   <p>

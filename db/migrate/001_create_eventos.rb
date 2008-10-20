@@ -6,7 +6,7 @@ class CreateEventos < ActiveRecord::Migration
       t.date :data
       t.time :inicio
       t.time :fim
-      t.string :cor
+      t.string :tipo
       t.string :area
 
       t.timestamps
